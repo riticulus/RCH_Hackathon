@@ -1,0 +1,1934 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "api for AdvisoryService calc v4",
+    "version" : "19.01.01.001",
+    "title" : "AdvisoryService.loa.calc.v4"
+  },
+  "basePath" : "https://api-test.raiffeisen.ch/loacalc/service/v4/705/products"
+  "tags" : [ {
+    "name" : "calculators"
+  }, {
+    "name" : "discounts"
+  }, {
+    "name" : "products"
+  }, {
+    "name" : "questionnaires"
+  } ],
+  "paths" : {
+    "/calculators/affordabilityAnalysis" : {
+      "post" : {
+        "tags" : [ "calculators" ],
+        "summary" : "post affordability analysis",
+        "description" : "",
+        "operationId" : "affordabilityAnalysis",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/AffordabilityAnalysisRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AffordabilityAnalysisResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/financingProposal" : {
+      "post" : {
+        "tags" : [ "calculators" ],
+        "summary" : "post financing proposal",
+        "description" : "",
+        "operationId" : "financingProposal",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/FinancingProposalRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FinancingProposalResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/municipalities" : {
+      "get" : {
+        "tags" : [ "calculators" ],
+        "summary" : "get municipalities",
+        "description" : "",
+        "operationId" : "municipalities",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "zipCode",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/MunicipalitiesResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/notionalRentalValue" : {
+      "get" : {
+        "tags" : [ "calculators" ],
+        "summary" : "get notional rental value",
+        "description" : "",
+        "operationId" : "notionalRentalValue",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "initialCost",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/NotionalRentalValueResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/printAffordabilityAnalysis" : {
+      "post" : {
+        "tags" : [ "calculators" ],
+        "summary" : "post print affordability analysis",
+        "description" : "",
+        "operationId" : "printAffordabilityAnalysis",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/pdf" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/PrintAffordabilityAnalysisRequest"
+          }
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/printFinancingProposal" : {
+      "post" : {
+        "tags" : [ "calculators" ],
+        "summary" : "post print financing proposal",
+        "description" : "",
+        "operationId" : "printFinancingProposal",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/pdf" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/PrintFinancingProposalRequest"
+          }
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/rentalComparison" : {
+      "post" : {
+        "tags" : [ "calculators" ],
+        "summary" : "post rental comparison",
+        "description" : "",
+        "operationId" : "rentalComparison",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/RentalComparisonRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/RentalComparisonResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/requestValidationRules" : {
+      "get" : {
+        "tags" : [ "calculators" ],
+        "summary" : "get validation rules",
+        "description" : "",
+        "operationId" : "requestValidationRules",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "operation",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object"
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/taxCalculation" : {
+      "post" : {
+        "tags" : [ "calculators" ],
+        "summary" : "post tax calculation",
+        "description" : "",
+        "operationId" : "taxCalculation",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/TaxCalculationRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TaxCalculationResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/calculators/version" : {
+      "get" : {
+        "tags" : [ "calculators" ],
+        "summary" : "ping-request, returns version of api and implementation",
+        "description" : "",
+        "operationId" : "getVersion",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/VersionResponse"
+            }
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/questionnaires" : {
+      "get" : {
+        "tags" : [ "questionnaires" ],
+        "summary" : "get all questionnaires",
+        "description" : "",
+        "operationId" : "getQuestionnaires",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "lang",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "GERMAN", "ITALIAN", "FRENCH" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/QuestionnairesResponse"
+            }
+          },
+          "400" : {
+            "description" : "bad Request"
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/questionnaires/{questionnaireKey}" : {
+      "get" : {
+        "tags" : [ "questionnaires" ],
+        "summary" : "get questionnaire by questionnaireKey",
+        "description" : "",
+        "operationId" : "getQuestionnaire",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "questionnaireKey",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "lang",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "GERMAN", "ITALIAN", "FRENCH" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/QuestionnaireResponse"
+            }
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/rchProducts" : {
+      "get" : {
+        "tags" : [ "products" ],
+        "summary" : "get rch products",
+        "description" : "",
+        "operationId" : "getAvailableRchProducts",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/RchProductsResponse"
+            }
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/{bankCode}/discounts" : {
+      "get" : {
+        "tags" : [ "discounts" ],
+        "summary" : "get discounts",
+        "description" : "",
+        "operationId" : "getAvailableDiscountModels",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "bankCode",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/DiscountsResponse"
+            }
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    },
+    "/{bankCode}/products" : {
+      "get" : {
+        "tags" : [ "products" ],
+        "summary" : "get products",
+        "description" : "",
+        "operationId" : "getAvailableProducts",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "bankCode",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "omitVariants",
+          "in" : "query",
+          "required" : false,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ProductsResponse"
+            }
+          },
+          "404" : {
+            "description" : "not found"
+          },
+          "500" : {
+            "description" : "server-error",
+            "schema" : {
+              "$ref" : "#/definitions/ServerError"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "AdditionalSecurities" : {
+      "type" : "object",
+      "properties" : {
+        "provisionBailment" : {
+          "type" : "number",
+          "example" : 7443.0
+        }
+      }
+    },
+    "AdditionalSecuritiesResult" : {
+      "type" : "object",
+      "required" : [ "totalAdditionalSecurities" ],
+      "properties" : {
+        "totalAdditionalSecurities" : {
+          "type" : "number",
+          "example" : 7443.0
+        }
+      }
+    },
+    "AffordabilityAnalysisLimits" : {
+      "type" : "object",
+      "required" : [ "maxCost", "minCapitalResources", "minIncome" ],
+      "properties" : {
+        "maxCost" : {
+          "type" : "number",
+          "minimum" : 0.0
+        },
+        "minCapitalResources" : {
+          "type" : "number",
+          "minimum" : 0.0
+        },
+        "minIncome" : {
+          "type" : "number",
+          "minimum" : 0.0
+        }
+      }
+    },
+    "AffordabilityAnalysisRequest" : {
+      "type" : "object",
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObject" : {
+          "$ref" : "#/definitions/FinancingObject"
+        },
+        "income" : {
+          "$ref" : "#/definitions/Income"
+        },
+        "capitalResources" : {
+          "$ref" : "#/definitions/CapitalResources"
+        },
+        "additionalSecurities" : {
+          "$ref" : "#/definitions/AdditionalSecurities"
+        }
+      }
+    },
+    "AffordabilityAnalysisResponse" : {
+      "type" : "object",
+      "required" : [ "additionalSecuritiesResult", "affordabilityAnalysisLimits", "capitalResourcesResult", "financingObjectResult", "financingProposals", "financingResult", "financingStatus", "incomeResult" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObjectResult" : {
+          "$ref" : "#/definitions/FinancingObjectResult"
+        },
+        "incomeResult" : {
+          "$ref" : "#/definitions/IncomeResult"
+        },
+        "capitalResourcesResult" : {
+          "$ref" : "#/definitions/CapitalResourcesResult"
+        },
+        "additionalSecuritiesResult" : {
+          "$ref" : "#/definitions/AdditionalSecuritiesResult"
+        },
+        "financingResult" : {
+          "$ref" : "#/definitions/FinancingResult"
+        },
+        "financingProposals" : {
+          "$ref" : "#/definitions/FinancingProposals"
+        },
+        "financingStatus" : {
+          "$ref" : "#/definitions/FinancingStatus"
+        },
+        "affordabilityAnalysisLimits" : {
+          "$ref" : "#/definitions/AffordabilityAnalysisLimits"
+        }
+      }
+    },
+    "AffordabilityResult" : {
+      "type" : "object",
+      "required" : [ "affordabilityOk", "financingBurdenShare", "financingBurdenShareLimit", "totalFinancingBurdenPerYear", "totalIncome" ],
+      "properties" : {
+        "totalIncome" : {
+          "type" : "number",
+          "example" : 200000.0
+        },
+        "totalFinancingBurdenPerYear" : {
+          "type" : "number",
+          "example" : 120000.0
+        },
+        "financingBurdenShare" : {
+          "type" : "number",
+          "example" : 20000.0
+        },
+        "affordabilityOk" : {
+          "type" : "boolean",
+          "example" : true,
+          "default" : false
+        },
+        "financingBurdenShareLimit" : {
+          "type" : "number",
+          "example" : 500000.0
+        }
+      }
+    },
+    "Amortization" : {
+      "type" : "object",
+      "required" : [ "amountPerYear", "durationInYears", "totalAmount", "type" ],
+      "properties" : {
+        "totalAmount" : {
+          "type" : "number",
+          "example" : 50000.0
+        },
+        "durationInYears" : {
+          "type" : "integer",
+          "example" : 5
+        },
+        "amountPerYear" : {
+          "type" : "number",
+          "example" : 5000.0
+        },
+        "type" : {
+          "type" : "string",
+          "example" : "MORTGAGE",
+          "enum" : [ "MORTGAGE", "PRIVATE_LOAN" ]
+        }
+      }
+    },
+    "Amortizations" : {
+      "type" : "object",
+      "properties" : {
+        "amortization" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Amortization"
+          }
+        }
+      }
+    },
+    "Answer" : {
+      "type" : "object",
+      "required" : [ "key", "text" ],
+      "properties" : {
+        "key" : {
+          "type" : "string",
+          "example" : "RELEVANT"
+        },
+        "text" : {
+          "type" : "string",
+          "example" : "wichtig"
+        }
+      }
+    },
+    "Answers" : {
+      "type" : "object",
+      "required" : [ "answer" ],
+      "properties" : {
+        "answer" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Answer"
+          },
+          "maxItems" : 2147483647,
+          "minItems" : 2
+        }
+      }
+    },
+    "CapitalResources" : {
+      "type" : "object",
+      "properties" : {
+        "liquidAssets" : {
+          "type" : "number",
+          "example" : 200000.0
+        },
+        "buildingLand" : {
+          "type" : "number",
+          "example" : 420.0
+        },
+        "provisionAssets" : {
+          "type" : "number",
+          "example" : 88700.0
+        },
+        "personalContribution" : {
+          "type" : "number",
+          "example" : 58500.0
+        }
+      }
+    },
+    "CapitalResourcesResult" : {
+      "type" : "object",
+      "required" : [ "capitalResources", "capitalResourcesShare", "totalCapitalResources" ],
+      "properties" : {
+        "totalCapitalResources" : {
+          "type" : "number",
+          "example" : 800000.0
+        },
+        "capitalResourcesShare" : {
+          "type" : "number",
+          "example" : 0.25
+        },
+        "capitalResources" : {
+          "example" : "200000",
+          "$ref" : "#/definitions/CapitalResources"
+        }
+      }
+    },
+    "DiscountModel" : {
+      "type" : "object",
+      "required" : [ "discountModelType", "name" ],
+      "properties" : {
+        "name" : {
+          "example" : "Model",
+          "$ref" : "#/definitions/I18NText"
+        },
+        "restrictions" : {
+          "$ref" : "#/definitions/I18NText"
+        },
+        "notes" : {
+          "$ref" : "#/definitions/I18NText"
+        },
+        "discountModelType" : {
+          "type" : "string",
+          "example" : "FAMILY",
+          "enum" : [ "ECO", "FAMILY", "PROSPECT", "BANK" ]
+        }
+      }
+    },
+    "DiscountModels" : {
+      "type" : "object",
+      "properties" : {
+        "discountModel" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/DiscountModel"
+          }
+        }
+      }
+    },
+    "DiscountsResponse" : {
+      "type" : "object",
+      "required" : [ "bankCode", "discounts", "maximumDiscountRate", "maximumDurationInYears", "maximumFinancingAmount" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "maximumFinancingAmount" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 35000,
+          "minimum" : 1.0
+        },
+        "maximumDurationInYears" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 10,
+          "minimum" : 1.0
+        },
+        "maximumDiscountRate" : {
+          "type" : "number",
+          "example" : 3.14
+        },
+        "discounts" : {
+          "$ref" : "#/definitions/DiscountModels"
+        }
+      }
+    },
+    "ExtraChargesResult" : {
+      "type" : "object",
+      "required" : [ "amountPerYear", "percentage" ],
+      "properties" : {
+        "percentage" : {
+          "type" : "number",
+          "example" : 0.3
+        },
+        "amountPerYear" : {
+          "type" : "number",
+          "example" : 80000.0
+        }
+      }
+    },
+    "FinancingBurdenResult" : {
+      "type" : "object",
+      "required" : [ "amortizationsPerMonth", "amortizationsPerYear", "extraChargesPerMonth", "extraChargesPerYear", "interestOnDebtPerMonth", "interestOnDebtPerYear", "totalFinancingBurdenPerMonth", "totalFinancingBurdenPerYear" ],
+      "properties" : {
+        "interestOnDebtPerMonth" : {
+          "type" : "number",
+          "example" : 100000.0
+        },
+        "interestOnDebtPerYear" : {
+          "type" : "number",
+          "example" : 2000.0
+        },
+        "extraChargesPerMonth" : {
+          "type" : "number",
+          "example" : 500.0
+        },
+        "extraChargesPerYear" : {
+          "type" : "number",
+          "example" : 3100.0
+        },
+        "amortizationsPerMonth" : {
+          "type" : "number",
+          "example" : 100.0
+        },
+        "amortizationsPerYear" : {
+          "type" : "number",
+          "example" : 3100.0
+        },
+        "totalFinancingBurdenPerYear" : {
+          "type" : "number",
+          "example" : 2000.0
+        },
+        "totalFinancingBurdenPerMonth" : {
+          "type" : "number",
+          "example" : 180.0
+        }
+      }
+    },
+    "FinancingObject" : {
+      "type" : "object",
+      "properties" : {
+        "initialCost" : {
+          "type" : "number",
+          "example" : 1130000.0,
+          "minimum" : 0.0,
+          "maximum" : 5000000.0
+        },
+        "additionalInvestments" : {
+          "type" : "number",
+          "example" : 93000.0
+        }
+      }
+    },
+    "FinancingObjectResult" : {
+      "type" : "object",
+      "required" : [ "extraCharges", "financingObject", "totalObjectCost" ],
+      "properties" : {
+        "totalObjectCost" : {
+          "type" : "number",
+          "example" : 2500000.0
+        },
+        "extraCharges" : {
+          "example" : "130000",
+          "$ref" : "#/definitions/ExtraChargesResult"
+        },
+        "financingObject" : {
+          "example" : "1130000",
+          "$ref" : "#/definitions/FinancingObject"
+        }
+      }
+    },
+    "FinancingProposal" : {
+      "type" : "object",
+      "required" : [ "affordability", "aggregatedMortgages", "amortizations", "financingBurden", "proposalType", "tranches" ],
+      "properties" : {
+        "proposalType" : {
+          "type" : "string",
+          "example" : "CALCULATORY",
+          "enum" : [ "CALCULATORY", "PROPOSAL" ]
+        },
+        "tranches" : {
+          "$ref" : "#/definitions/Tranches"
+        },
+        "aggregatedMortgages" : {
+          "$ref" : "#/definitions/MortgageListSummary"
+        },
+        "amortizations" : {
+          "$ref" : "#/definitions/Amortizations"
+        },
+        "financingBurden" : {
+          "$ref" : "#/definitions/FinancingBurdenResult"
+        },
+        "affordability" : {
+          "$ref" : "#/definitions/AffordabilityResult"
+        }
+      }
+    },
+    "FinancingProposalRequest" : {
+      "type" : "object",
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObject" : {
+          "$ref" : "#/definitions/FinancingObject"
+        },
+        "income" : {
+          "$ref" : "#/definitions/Income"
+        },
+        "capitalResources" : {
+          "$ref" : "#/definitions/CapitalResources"
+        },
+        "additionalSecurities" : {
+          "$ref" : "#/definitions/AdditionalSecurities"
+        },
+        "financingProposalQuestionnaireReplies" : {
+          "$ref" : "#/definitions/QuestionnaireReplies"
+        }
+      }
+    },
+    "FinancingProposalResponse" : {
+      "type" : "object",
+      "required" : [ "additionalSecuritiesResult", "capitalResourcesResult", "financingObjectResult", "financingProposals", "financingResult", "financingStatus", "incomeResult" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObjectResult" : {
+          "$ref" : "#/definitions/FinancingObjectResult"
+        },
+        "incomeResult" : {
+          "$ref" : "#/definitions/IncomeResult"
+        },
+        "capitalResourcesResult" : {
+          "$ref" : "#/definitions/CapitalResourcesResult"
+        },
+        "additionalSecuritiesResult" : {
+          "$ref" : "#/definitions/AdditionalSecuritiesResult"
+        },
+        "financingResult" : {
+          "$ref" : "#/definitions/FinancingResult"
+        },
+        "financingProposals" : {
+          "$ref" : "#/definitions/FinancingProposals"
+        },
+        "financingStatus" : {
+          "$ref" : "#/definitions/FinancingStatus"
+        }
+      }
+    },
+    "FinancingProposals" : {
+      "type" : "object",
+      "required" : [ "financingProposal" ],
+      "properties" : {
+        "financingProposal" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/FinancingProposal"
+          },
+          "maxItems" : 2147483647,
+          "minItems" : 1
+        }
+      }
+    },
+    "FinancingResult" : {
+      "type" : "object",
+      "required" : [ "financingGap", "financingOk", "financingShare", "financingShareLimit", "financingState", "totalFinancingAmount" ],
+      "properties" : {
+        "totalFinancingAmount" : {
+          "type" : "number",
+          "example" : 2100000.0
+        },
+        "financingShare" : {
+          "type" : "number",
+          "example" : 0.55
+        },
+        "financingOk" : {
+          "type" : "boolean",
+          "example" : true,
+          "default" : false
+        },
+        "financingState" : {
+          "type" : "string",
+          "example" : "FINANCING_GIVEN",
+          "enum" : [ "FINANCING_GIVEN", "FINANCING_SHORT", "FINANCING_NOT_GIVEN" ]
+        },
+        "financingShareLimit" : {
+          "type" : "number",
+          "example" : 1.2
+        },
+        "financingGap" : {
+          "type" : "number",
+          "example" : 500000.0
+        }
+      }
+    },
+    "FinancingStatus" : {
+      "type" : "object",
+      "required" : [ "financingState" ],
+      "properties" : {
+        "financingState" : {
+          "type" : "string",
+          "example" : "FINANCING_GIVEN",
+          "enum" : [ "FINANCING_GIVEN", "FINANCING_SHORT", "FINANCING_NOT_GIVEN" ]
+        }
+      }
+    },
+    "I18NText" : {
+      "type" : "object",
+      "properties" : {
+        "textDe" : {
+          "type" : "string"
+        },
+        "textFr" : {
+          "type" : "string"
+        },
+        "textIt" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Income" : {
+      "type" : "object",
+      "properties" : {
+        "grossIncomePerYear" : {
+          "type" : "number",
+          "example" : 301000.0
+        }
+      }
+    },
+    "IncomeResult" : {
+      "type" : "object",
+      "required" : [ "totalIncome" ],
+      "properties" : {
+        "totalIncome" : {
+          "type" : "number",
+          "example" : 350000.0
+        }
+      }
+    },
+    "MortgageListSummary" : {
+      "type" : "object",
+      "required" : [ "averageRate", "totalAmount", "totalInterestOnDebt" ],
+      "properties" : {
+        "totalAmount" : {
+          "type" : "number",
+          "example" : 2000000.0
+        },
+        "averageRate" : {
+          "type" : "number",
+          "example" : 15.55
+        },
+        "totalInterestOnDebt" : {
+          "type" : "number",
+          "example" : 130000.0
+        }
+      }
+    },
+    "MunicipalitiesResponse" : {
+      "type" : "object",
+      "properties" : {
+        "municipality" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Municipality"
+          }
+        }
+      }
+    },
+    "Municipality" : {
+      "type" : "object",
+      "required" : [ "cantonCode", "name", "postalCode" ],
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "example" : "St. Gallen"
+        },
+        "postalCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 9000,
+          "minimum" : 1000.0,
+          "maximum" : 9999.0
+        },
+        "cantonCode" : {
+          "type" : "string",
+          "example" : "SG",
+          "minLength" : 2,
+          "maxLength" : 2
+        }
+      }
+    },
+    "NotionalRentalValueResponse" : {
+      "type" : "object",
+      "required" : [ "notionalRentalValue" ],
+      "properties" : {
+        "notionalRentalValue" : {
+          "type" : "number",
+          "example" : 123000.0
+        }
+      }
+    },
+    "PrintAffordabilityAnalysisInput" : {
+      "type" : "object",
+      "required" : [ "language" ],
+      "properties" : {
+        "language" : {
+          "type" : "string",
+          "example" : "GERMAN",
+          "enum" : [ "GERMAN", "ITALIAN", "FRENCH" ]
+        }
+      }
+    },
+    "PrintAffordabilityAnalysisRequest" : {
+      "type" : "object",
+      "required" : [ "printAffordabilityAnalysisInput" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObject" : {
+          "$ref" : "#/definitions/FinancingObject"
+        },
+        "income" : {
+          "$ref" : "#/definitions/Income"
+        },
+        "capitalResources" : {
+          "$ref" : "#/definitions/CapitalResources"
+        },
+        "additionalSecurities" : {
+          "$ref" : "#/definitions/AdditionalSecurities"
+        },
+        "printAffordabilityAnalysisInput" : {
+          "$ref" : "#/definitions/PrintAffordabilityAnalysisInput"
+        }
+      }
+    },
+    "PrintFinancingProposalInput" : {
+      "type" : "object",
+      "required" : [ "language" ],
+      "properties" : {
+        "language" : {
+          "type" : "string",
+          "example" : "GERMAN",
+          "enum" : [ "GERMAN", "ITALIAN", "FRENCH" ]
+        }
+      }
+    },
+    "PrintFinancingProposalRequest" : {
+      "type" : "object",
+      "required" : [ "financingProposalQuestionnaireReplies", "printFinancingProposalInput" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObject" : {
+          "$ref" : "#/definitions/FinancingObject"
+        },
+        "income" : {
+          "$ref" : "#/definitions/Income"
+        },
+        "capitalResources" : {
+          "$ref" : "#/definitions/CapitalResources"
+        },
+        "additionalSecurities" : {
+          "$ref" : "#/definitions/AdditionalSecurities"
+        },
+        "financingProposalQuestionnaireReplies" : {
+          "$ref" : "#/definitions/QuestionnaireReplies"
+        },
+        "printFinancingProposalInput" : {
+          "$ref" : "#/definitions/PrintFinancingProposalInput"
+        }
+      }
+    },
+    "Product" : {
+      "type" : "object",
+      "required" : [ "baseProperties" ],
+      "properties" : {
+        "baseProperties" : {
+          "$ref" : "#/definitions/ProductBaseProperties"
+        },
+        "amountMinimum" : {
+          "type" : "number",
+          "minimum" : 0.0
+        },
+        "amountMaximum" : {
+          "type" : "number",
+          "minimum" : 0.0
+        },
+        "restrictions" : {
+          "$ref" : "#/definitions/I18NText"
+        },
+        "notes" : {
+          "$ref" : "#/definitions/I18NText"
+        },
+        "ratesPublished" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "variants" : {
+          "$ref" : "#/definitions/Variants"
+        },
+        "fixationDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "valuationDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        }
+      }
+    },
+    "ProductBaseProperties" : {
+      "type" : "object",
+      "required" : [ "model", "name", "technicalId" ],
+      "properties" : {
+        "technicalId" : {
+          "type" : "string",
+          "minLength" : 1,
+          "maxLength" : 40
+        },
+        "rchTechnicalId" : {
+          "type" : "string",
+          "minLength" : 1,
+          "maxLength" : 40
+        },
+        "model" : {
+          "type" : "string",
+          "enum" : [ "VARIABLE", "FIXED", "LIBORTOP", "LIBORFLEX" ]
+        },
+        "name" : {
+          "$ref" : "#/definitions/I18NText"
+        }
+      }
+    },
+    "Products" : {
+      "type" : "object",
+      "properties" : {
+        "product" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Product"
+          }
+        }
+      }
+    },
+    "ProductsResponse" : {
+      "type" : "object",
+      "required" : [ "bankCode", "products" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "products" : {
+          "$ref" : "#/definitions/Products"
+        }
+      }
+    },
+    "Question" : {
+      "type" : "object",
+      "required" : [ "answers", "key", "text" ],
+      "properties" : {
+        "key" : {
+          "type" : "string",
+          "example" : "constantCharges"
+        },
+        "text" : {
+          "type" : "string",
+          "example" : "Wie wichtig sind für Sie planbare Kosten für Ihr Wohneigentum?"
+        },
+        "answers" : {
+          "$ref" : "#/definitions/Answers"
+        }
+      }
+    },
+    "Questionnaire" : {
+      "type" : "object",
+      "required" : [ "key", "lang", "questions", "validFromDate" ],
+      "properties" : {
+        "key" : {
+          "type" : "string",
+          "example" : "financingProposal"
+        },
+        "lang" : {
+          "type" : "string",
+          "example" : "GERMAN",
+          "enum" : [ "GERMAN", "ITALIAN", "FRENCH" ]
+        },
+        "validFromDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "questions" : {
+          "$ref" : "#/definitions/Questions"
+        }
+      }
+    },
+    "QuestionnaireReplies" : {
+      "type" : "object",
+      "required" : [ "questionnaireKey", "replies" ],
+      "properties" : {
+        "questionnaireKey" : {
+          "type" : "string",
+          "example" : "financingProposal"
+        },
+        "replies" : {
+          "$ref" : "#/definitions/Replies"
+        }
+      }
+    },
+    "QuestionnaireResponse" : {
+      "type" : "object",
+      "required" : [ "questionnaire" ],
+      "properties" : {
+        "questionnaire" : {
+          "$ref" : "#/definitions/Questionnaire"
+        }
+      }
+    },
+    "QuestionnairesResponse" : {
+      "type" : "object",
+      "properties" : {
+        "questionnaire" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Questionnaire"
+          }
+        }
+      }
+    },
+    "Questions" : {
+      "type" : "object",
+      "properties" : {
+        "question" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Question"
+          }
+        }
+      }
+    },
+    "RchProductsResponse" : {
+      "type" : "object",
+      "required" : [ "products" ],
+      "properties" : {
+        "products" : {
+          "$ref" : "#/definitions/Products"
+        }
+      }
+    },
+    "RentalComparisonInput" : {
+      "type" : "object",
+      "required" : [ "currentRentPerMonth", "taxBurdenChangePerMonth" ],
+      "properties" : {
+        "currentRentPerMonth" : {
+          "type" : "number",
+          "example" : 1200.0
+        },
+        "taxBurdenChangePerMonth" : {
+          "type" : "number",
+          "example" : 700.0
+        }
+      }
+    },
+    "RentalComparisonOutput" : {
+      "type" : "object",
+      "required" : [ "financingBurdenChange" ],
+      "properties" : {
+        "financingBurdenChange" : {
+          "type" : "number"
+        },
+        "taxBurdenChange" : {
+          "type" : "number"
+        },
+        "financingBurdenChangeIncludingTax" : {
+          "type" : "number"
+        }
+      }
+    },
+    "RentalComparisonRequest" : {
+      "type" : "object",
+      "required" : [ "rentalComparisonInput" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObject" : {
+          "$ref" : "#/definitions/FinancingObject"
+        },
+        "income" : {
+          "$ref" : "#/definitions/Income"
+        },
+        "capitalResources" : {
+          "$ref" : "#/definitions/CapitalResources"
+        },
+        "additionalSecurities" : {
+          "$ref" : "#/definitions/AdditionalSecurities"
+        },
+        "rentalComparisonInput" : {
+          "$ref" : "#/definitions/RentalComparisonInput"
+        },
+        "financingProposalQuestionnaireReplies" : {
+          "$ref" : "#/definitions/QuestionnaireReplies"
+        }
+      }
+    },
+    "RentalComparisonResponse" : {
+      "type" : "object",
+      "required" : [ "additionalSecuritiesResult", "capitalResourcesResult", "financingObjectResult", "financingProposals", "financingResult", "financingStatus", "incomeResult", "rentalComparisonOutput" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObjectResult" : {
+          "$ref" : "#/definitions/FinancingObjectResult"
+        },
+        "incomeResult" : {
+          "$ref" : "#/definitions/IncomeResult"
+        },
+        "capitalResourcesResult" : {
+          "$ref" : "#/definitions/CapitalResourcesResult"
+        },
+        "additionalSecuritiesResult" : {
+          "$ref" : "#/definitions/AdditionalSecuritiesResult"
+        },
+        "financingResult" : {
+          "$ref" : "#/definitions/FinancingResult"
+        },
+        "financingProposals" : {
+          "$ref" : "#/definitions/FinancingProposals"
+        },
+        "financingStatus" : {
+          "$ref" : "#/definitions/FinancingStatus"
+        },
+        "rentalComparisonOutput" : {
+          "$ref" : "#/definitions/RentalComparisonOutput"
+        }
+      }
+    },
+    "Replies" : {
+      "type" : "object",
+      "properties" : {
+        "reply" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Reply"
+          }
+        }
+      }
+    },
+    "Reply" : {
+      "type" : "object",
+      "required" : [ "answerKey", "questionKey" ],
+      "properties" : {
+        "questionKey" : {
+          "type" : "string",
+          "example" : "financialCutbackProspect"
+        },
+        "answerKey" : {
+          "type" : "string",
+          "example" : "YES"
+        }
+      }
+    },
+    "ServerError" : {
+      "type" : "object",
+      "properties" : {
+        "cause" : {
+          "$ref" : "#/definitions/Throwable"
+        },
+        "stackTrace" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/StackTraceElement"
+          }
+        },
+        "detail" : {
+          "$ref" : "#/definitions/Throwable"
+        },
+        "message" : {
+          "type" : "string"
+        },
+        "localizedMessage" : {
+          "type" : "string"
+        },
+        "suppressed" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Throwable"
+          }
+        }
+      }
+    },
+    "StackTraceElement" : {
+      "type" : "object",
+      "properties" : {
+        "methodName" : {
+          "type" : "string"
+        },
+        "fileName" : {
+          "type" : "string"
+        },
+        "lineNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "nativeMethod" : {
+          "type" : "boolean",
+          "default" : false
+        }
+      }
+    },
+    "TaxCalculationInput" : {
+      "type" : "object",
+      "required" : [ "civilStatus", "denomination", "maintenanceDeduction", "mortgageInterestOnDebt", "municipality", "notionalRentalValue", "numberOfChildren", "taxableIncome" ],
+      "properties" : {
+        "municipality" : {
+          "$ref" : "#/definitions/Municipality"
+        },
+        "taxableIncome" : {
+          "type" : "number",
+          "example" : 72000.0,
+          "minimum" : 0.0
+        },
+        "notionalRentalValue" : {
+          "type" : "number",
+          "example" : 13000.0,
+          "minimum" : 0.0
+        },
+        "maintenanceDeduction" : {
+          "type" : "number",
+          "example" : 18500.0,
+          "minimum" : 0.0
+        },
+        "mortgageInterestOnDebt" : {
+          "type" : "number",
+          "example" : 25000.0,
+          "minimum" : 0.0
+        },
+        "civilStatus" : {
+          "type" : "string",
+          "example" : "SINGLE",
+          "enum" : [ "SINGLE", "MARRIED", "CIVIL_UNION", "WIDOWED", "DIVORCED", "CIVIL_UNION_SEP_BY_LAW", "CIVIL_UNION_SEP_BY_DEATH" ]
+        },
+        "numberOfChildren" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 2
+        },
+        "denomination" : {
+          "type" : "string",
+          "example" : "CATHOLIC",
+          "enum" : [ "PROTESTANT", "CATHOLIC", "CHRIST_CATHOLIC", "OTHER" ]
+        },
+        "denominationPartner" : {
+          "type" : "string",
+          "enum" : [ "PROTESTANT", "CATHOLIC", "CHRIST_CATHOLIC", "OTHER" ]
+        }
+      }
+    },
+    "TaxCalculationOutput" : {
+      "type" : "object",
+      "required" : [ "calculationDirectAmortization", "calculationExistingTax", "calculationIndirectAmortization", "municipality" ],
+      "properties" : {
+        "municipality" : {
+          "$ref" : "#/definitions/Municipality"
+        },
+        "calculationDirectAmortization" : {
+          "$ref" : "#/definitions/TaxCalculationResult"
+        },
+        "calculationIndirectAmortization" : {
+          "$ref" : "#/definitions/TaxCalculationResult"
+        },
+        "calculationExistingTax" : {
+          "$ref" : "#/definitions/TaxCalculationResult"
+        }
+      }
+    },
+    "TaxCalculationRequest" : {
+      "type" : "object",
+      "required" : [ "taxCalculationInput" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObject" : {
+          "$ref" : "#/definitions/FinancingObject"
+        },
+        "income" : {
+          "$ref" : "#/definitions/Income"
+        },
+        "capitalResources" : {
+          "$ref" : "#/definitions/CapitalResources"
+        },
+        "additionalSecurities" : {
+          "$ref" : "#/definitions/AdditionalSecurities"
+        },
+        "taxCalculationInput" : {
+          "$ref" : "#/definitions/TaxCalculationInput"
+        },
+        "financingProposalQuestionnaireReplies" : {
+          "$ref" : "#/definitions/QuestionnaireReplies"
+        }
+      }
+    },
+    "TaxCalculationResponse" : {
+      "type" : "object",
+      "required" : [ "additionalSecuritiesResult", "capitalResourcesResult", "financingObjectResult", "financingProposals", "financingResult", "financingStatus", "incomeResult", "taxCalculationOutput" ],
+      "properties" : {
+        "bankCode" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 705,
+          "minimum" : 1.0,
+          "maximum" : 9999.0
+        },
+        "financingObjectResult" : {
+          "$ref" : "#/definitions/FinancingObjectResult"
+        },
+        "incomeResult" : {
+          "$ref" : "#/definitions/IncomeResult"
+        },
+        "capitalResourcesResult" : {
+          "$ref" : "#/definitions/CapitalResourcesResult"
+        },
+        "additionalSecuritiesResult" : {
+          "$ref" : "#/definitions/AdditionalSecuritiesResult"
+        },
+        "financingResult" : {
+          "$ref" : "#/definitions/FinancingResult"
+        },
+        "financingProposals" : {
+          "$ref" : "#/definitions/FinancingProposals"
+        },
+        "financingStatus" : {
+          "$ref" : "#/definitions/FinancingStatus"
+        },
+        "taxCalculationOutput" : {
+          "$ref" : "#/definitions/TaxCalculationOutput"
+        }
+      }
+    },
+    "TaxCalculationResult" : {
+      "type" : "object",
+      "required" : [ "maintenanceDeduction", "marginalTaxRate", "mortgageInterestOnDebt", "notionalRentalValue", "pillar3APaymentDeduction", "taxBurdenChangePerMonth", "taxBurdenChangePerYear", "taxableIncomeChange", "totalTaxBurden" ],
+      "properties" : {
+        "notionalRentalValue" : {
+          "type" : "number",
+          "example" : 3200.0,
+          "minimum" : 0.0
+        },
+        "maintenanceDeduction" : {
+          "type" : "number",
+          "example" : 3200.0,
+          "minimum" : 0.0
+        },
+        "mortgageInterestOnDebt" : {
+          "type" : "number",
+          "example" : 55000.0,
+          "minimum" : 0.0
+        },
+        "pillar3APaymentDeduction" : {
+          "type" : "number",
+          "example" : 5000.0,
+          "minimum" : 0.0
+        },
+        "taxableIncomeChange" : {
+          "type" : "number",
+          "example" : 125000.0
+        },
+        "marginalTaxRate" : {
+          "type" : "number",
+          "example" : 1.2
+        },
+        "taxBurdenChangePerYear" : {
+          "type" : "number",
+          "example" : 30000.0
+        },
+        "taxBurdenChangePerMonth" : {
+          "type" : "number",
+          "example" : 3020.0
+        },
+        "totalTaxBurden" : {
+          "type" : "number",
+          "example" : 35000.0
+        }
+      }
+    },
+    "Throwable" : {
+      "type" : "object",
+      "properties" : {
+        "cause" : {
+          "$ref" : "#/definitions/Throwable"
+        },
+        "stackTrace" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/StackTraceElement"
+          }
+        },
+        "localizedMessage" : {
+          "type" : "string"
+        },
+        "message" : {
+          "type" : "string"
+        },
+        "suppressed" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Throwable"
+          }
+        }
+      }
+    },
+    "Tranche" : {
+      "type" : "object",
+      "required" : [ "amount", "financingShare", "interestOnDebtPerYear", "interestRate" ],
+      "properties" : {
+        "product" : {
+          "$ref" : "#/definitions/ProductBaseProperties"
+        },
+        "variant" : {
+          "$ref" : "#/definitions/VariantBaseProperties"
+        },
+        "amount" : {
+          "type" : "number",
+          "example" : 12000.0,
+          "minimum" : 0.0
+        },
+        "financingShare" : {
+          "type" : "number",
+          "example" : 0.8
+        },
+        "interestRate" : {
+          "type" : "number",
+          "example" : 12.25
+        },
+        "interestOnDebtPerYear" : {
+          "type" : "number",
+          "example" : 15000.0,
+          "minimum" : 0.0
+        }
+      }
+    },
+    "Tranches" : {
+      "type" : "object",
+      "properties" : {
+        "tranche" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Tranche"
+          }
+        }
+      }
+    },
+    "Variant" : {
+      "type" : "object",
+      "required" : [ "baseProperties", "interestRate" ],
+      "properties" : {
+        "baseProperties" : {
+          "$ref" : "#/definitions/VariantBaseProperties"
+        },
+        "liborRate" : {
+          "type" : "number"
+        },
+        "liborRateContract" : {
+          "type" : "number"
+        },
+        "interestRate" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "type" : "number"
+          },
+          "maxItems" : 2147483647,
+          "minItems" : 1
+        }
+      }
+    },
+    "VariantBaseProperties" : {
+      "type" : "object",
+      "required" : [ "variantKey" ],
+      "properties" : {
+        "variantKey" : {
+          "type" : "string"
+        },
+        "termInMonths" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "liborBaseKey" : {
+          "type" : "string"
+        },
+        "liborStrikeIndex" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "liborStrike" : {
+          "type" : "number"
+        },
+        "maxRate" : {
+          "type" : "number"
+        }
+      }
+    },
+    "Variants" : {
+      "type" : "object",
+      "required" : [ "variant" ],
+      "properties" : {
+        "variant" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/Variant"
+          },
+          "maxItems" : 2147483647,
+          "minItems" : 1
+        }
+      }
+    },
+    "VersionResponse" : {
+      "type" : "object",
+      "required" : [ "interfaceVersion", "projectVersion" ],
+      "properties" : {
+        "interfaceVersion" : {
+          "type" : "string",
+          "example" : "v4"
+        },
+        "projectVersion" : {
+          "type" : "string",
+          "example" : "17.00.00.042"
+        }
+      }
+    }
+  }
+}
