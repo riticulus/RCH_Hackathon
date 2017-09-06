@@ -1,4 +1,4 @@
-# RCH_Hackathon
+# Hack a Mind-Blowing Vision of «Voice Banking»
 [Raiffeisen RAIlab](https://www.raiffeisen.ch/winkeln/de/ueber-uns/organisation/rai-lab.html) participates the [HackZurich 2017]() as Gold Sponsor. Here on GitHub hacking teams will find all information they need to join the competition to our challenge.
 
 
