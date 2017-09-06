@@ -41,9 +41,14 @@ If you want you can benefit from existing APIs from Amazon, Google, Microsoft an
 
 
 ### Support
-Are you unsure if your ideas meet our expections? Don't hesitate to visit us at our Raiffeisen RAIlab show stand and talk to our representatives.
+Are you unsure if your ideas meet our expections? Don't hesitate to visit us at our Raiffeisen RAI Lab show stand and talk to our representatives.
 
 Do you have trouble connecting the devices? Problems using the APIs? Experts from Microsoft and Raiffeisen will help you with technical questions.
 
-Is your energy level low? Meet us at the Raiffeisen RAIlab show stand and relax with a free energy drink. 
-:battery:
+Is your energy level low? Meet us at the Raiffeisen RAI Lab show stand and relax with a free energy drink. 
+
+Your partners at Raiffeisen RAIlab show stand:
+- **Luis-Eduardo Ernst**, New Business Innovator, RAI Lab
+- **Jonas Rüttimann**, Applikationsentwickler Senior, Raiffeisen Schweiz 
+- **Mikhail Chatillon**, Technical Evangelist, Microsoft Schweiz GmbH
+- ...
