@@ -11,4 +11,4 @@ Use your device of choice! We want you to innovate ideas the way _you_ would lik
 
 
 ## APIs
-Get a free Azure voucher at our booth to access [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/). In fact, with that voucher you can access _all_ Azure Services for free.
+Get a free Azure voucher at our booth to use Microsoft Azure. Identify the speaker, turn spoken language into text, make sense ouf of text and understand the user's intent with [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/). In fact, with that voucher you can access _all_ Azure Services for free!
