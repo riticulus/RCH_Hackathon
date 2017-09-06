@@ -1,9 +1,20 @@
-# Hack a Mind-Blowing Vision of «Voice Banking»
+# RCH_Hackathon
 [Raiffeisen RAIlab](https://www.raiffeisen.ch/winkeln/de/ueber-uns/organisation/rai-lab.html) participates the [HackZurich 2017]() as Gold Sponsor. Here on GitHub hacking teams will find all information they need to join the competition to our challenge.
 
 
-## The Challenge
-...
+
+## The Challenge: Hack a Mind-Blowing Vision of «Voice Banking»
+The Raiffeisen Group is the third-largest banking group in Switzerland and leader in retail banking. After 20 years of Online Banking and after 10 years of Mobile Banking we belive it’s time for a new age of Banking. If we look at upcoming trends, we believe that «Voice Banking» might be the future!
+
+By today at least [20% of Google's mobile queries are voice searches](http://searchengineland.com/google-reveals-20-percent-queries-voice-queries-249917). Think about that! What will we be facing ten years from now?
+
+If people are using voice as their favorite interface to talk to their bank, they probably need different services than today. They will be talking to a mobile device or maybe to their intelligent speaker in their living room. So there might not even be a screen available to present the results to their voice query. So start thinking outside the box!
+
+Who will be using voice commands? Where? When? What Services could they be using? Do we already have the technology to fulfill the demands of our future bank customers? Or do we have to reinvent the wheel?
+
+Give us a sneek peek into your offbeat imagination! We are keen to see a prototype of _your_ mind-blowing vision of «Voice Banking»!
+
+
 
 
 ## Infrastructure
