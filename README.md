@@ -25,5 +25,5 @@ If you want you can benefit from existing APIs from Amazon, Google, Microsoft an
 
 - Get a free **Microsoft Azure** voucher at our booth to use Microsoft Azure. Identify the speaker, turn spoken language into text, make sense ouf of text and understand the user's intent with [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/). In fact, with that voucher you can access _all_ Azure Services for free!
 
-- Call existing **Raiffeisen** APIs to get anonymized and [categorized financial user transactions](TODO) and integrate [risk calculations](https://github.com/riticulus/RCH_Hackathon/blob/master/swagger%20hyporechner.json) into your application.
+- Call existing **Raiffeisen** APIs to get anonymized and [categorized financial user transactions](TODO) and integrate [financial user budget risk calculations](https://github.com/riticulus/RCH_Hackathon/blob/master/swagger%20hyporechner.json) into your application.
 
