@@ -16,6 +16,11 @@ Give us a sneek peek into your offbeat imagination! We are keen to see a prototy
 
 
 
+## The Reward
+The Raiffeisen RAI Lab jury will elect the best prototype of «Voice Banking». The winning team will be rewarded with gold coins worth X thousand Swiss Francs.
+
+
+
 
 ## Infrastructure
 If you want, use the APIs and devices of your choice. Or even invent everything from scratch: pretend Data-APIs existed by mocking them, generate test data as you need, or use generic data you find on the internet.
