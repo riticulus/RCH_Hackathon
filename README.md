@@ -19,11 +19,11 @@ Use your device of choice! We want you to innovate ideas the way _you_ would lik
 ### APIs
 If you want you can benefit from existing APIs from Amazon, Google, Microsoft and Raiffeisen:
 
-See how to extend **Google Home** by using [API.AI](https://api.ai/): [How To Build Your Own Action For Google Home Using API.AI](https://www.smashingmagazine.com/2017/05/build-action-google-home-api-ai/).
+- See how to extend **Google Home** by using [API.AI](https://api.ai/): [How To Build Your Own Action For Google Home Using API.AI](https://www.smashingmagazine.com/2017/05/build-action-google-home-api-ai/).
 
-See how to extend **Amazon Echo**'s capabilities by using the [Alexa Skills Kit](https://developer.amazon.com/alexa-skills-kit): [https://medium.com/hello-thirteen23/just-the-facts-alexa-71a04b836d7f](https://medium.com/hello-thirteen23/just-the-facts-alexa-71a04b836d7f).
+- See how to extend **Amazon Echo**'s capabilities by using the [Alexa Skills Kit](https://developer.amazon.com/alexa-skills-kit): [https://medium.com/hello-thirteen23/just-the-facts-alexa-71a04b836d7f](https://medium.com/hello-thirteen23/just-the-facts-alexa-71a04b836d7f).
 
-Get a free **Microsoft Azure** voucher at our booth to use Microsoft Azure. Identify the speaker, turn spoken language into text, make sense ouf of text and understand the user's intent with [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/). In fact, with that voucher you can access _all_ Azure Services for free!
+- Get a free **Microsoft Azure** voucher at our booth to use Microsoft Azure. Identify the speaker, turn spoken language into text, make sense ouf of text and understand the user's intent with [Microsoft Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/). In fact, with that voucher you can access _all_ Azure Services for free!
 
-Call existing **Raiffeisen** APIs to get anonymized and [categorized financial user transactions](TODO) and integrate [risk calculations](https://github.com/riticulus/RCH_Hackathon/blob/master/swagger%20hyporechner.json) into your application.
+- Call existing **Raiffeisen** APIs to get anonymized and [categorized financial user transactions](TODO) and integrate [risk calculations](https://github.com/riticulus/RCH_Hackathon/blob/master/swagger%20hyporechner.json) into your application.
 
