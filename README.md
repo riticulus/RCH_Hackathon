@@ -38,3 +38,12 @@ If you want you can benefit from existing APIs from Amazon, Google, Microsoft an
 
 - Call existing **Raiffeisen** APIs to get anonymized and [categorized financial user transactions](TODO) and integrate [financial user budget risk calculations](https://github.com/riticulus/RCH_Hackathon/blob/master/swagger%20hyporechner.json) into your application.
 
+
+
+### Support
+Are you unsure if your ideas meet our expections? Don't hesitate to visit us at our Raiffeisen RAIlab show stand and talk to our representatives.
+
+Do you have trouble connecting the devices? Problems using the APIs? Experts from Microsoft and Raiffeisen will help you with technical questions.
+
+Is your energy level low? Meet us at the Raiffeisen RAIlab show stand and relax with a free energy drink. 
+:battery:
