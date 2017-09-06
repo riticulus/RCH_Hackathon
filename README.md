@@ -47,7 +47,7 @@ Do you have trouble connecting the devices? Problems using the APIs? Experts fro
 
 Is your energy level low? Meet us at the Raiffeisen RAI Lab show stand and relax with a free energy drink. 
 
-Your partners at Raiffeisen RAIlab show stand:
+These partners await you at the Raiffeisen RAI Lab show stand:
 - **Luis-Eduardo Ernst**, New Business Innovator, RAI Lab
 - **Jonas Rüttimann**, Applikationsentwickler Senior, Raiffeisen Schweiz 
 - **Mikhail Chatillon**, Technical Evangelist, Microsoft Schweiz GmbH
