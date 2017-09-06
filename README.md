@@ -18,7 +18,7 @@ Give us a sneek peek into your offbeat imagination! We are keen to see a prototy
 
 
 ## Infrastructure
-If you want, use the APIs and devices you like. Or even invent everything from scratch: pretend Data-APIs existed by mocking them, generate test data as you need, or use generic data you find on the internet.
+If you want, use the APIs and devices of your choice. Or even invent everything from scratch: pretend Data-APIs existed by mocking them, generate test data as you need, or use generic data you find on the internet.
 
 Otherwise take benefit of the infrastructure we offer you:
 
