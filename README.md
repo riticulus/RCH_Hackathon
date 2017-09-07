@@ -1,7 +1,7 @@
 # RCH_Hackathon
 [Raiffeisen RAIlab](https://www.raiffeisen.ch/winkeln/de/ueber-uns/organisation/rai-lab.html) participates the [HackZurich 2017]() as Gold Sponsor. Here on GitHub hacking teams will find all information they need to join the competition to our challenge.
 
-
+![RAI Lab](https://www.raiffeisen.ch/content/dam/www/rch/ueber-uns/organisation/bannerbilder/Logo-RAI-Lab.jpg.transform/w1920/image.jpg)
 
 ## The Challenge: Hack a Mind-Blowing Vision of «Voice Banking»
 The Raiffeisen Group is the third-largest banking group in Switzerland and leader in retail banking. After 20 years of Online Banking and after 10 years of Mobile Banking we belive it’s time for a new age of Banking. If we look at upcoming trends, we believe that «Voice Banking» might be the future!
