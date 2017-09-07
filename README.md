@@ -50,12 +50,12 @@ Do you have trouble connecting the devices? Problems using the APIs? Experts fro
 Is your energy level low? Meet us at the Raiffeisen RAI Lab show stand and relax with a free energy drink. 
 
 These partners are awaiting your visit at the Raiffeisen RAI Lab show stand:
-- **Stefan Jeker**, Leiter RAI Lab
-- **Stefan Broder**, Abteilungsleiter Elektronische Kanäle
-- **Stevan Dronjak**, Gruppenleiter Web Application Security
-- **Luis-Eduardo Ernst**, New Business Innovator RAI Lab
-- **Jonas Rüttimann**, Applikationsentwickler Senior
-- **Heinz Ledermann**, Software Ingenieur
-- **Thomas Scheifele**, Software Ingenieur
+- **Stefan Jeker**, Leader RAI Lab
+- **Stefan Broder**, Unit Leader Elektronische Kanäle
+- **Stevan Dronjak**, Team Leader Web Application Security
+- **Luis-Eduardo Ernst**, New Business Innovator, RAI Lab
+- **Jonas Rüttimann**, Software Engineer
+- **Heinz Ledermann**, Software Engineer
+- **Thomas Scheifele**, Software Engineer
 - **Mikhail Chatillon**, Technical Evangelist, Microsoft Schweiz GmbH
 - ...
