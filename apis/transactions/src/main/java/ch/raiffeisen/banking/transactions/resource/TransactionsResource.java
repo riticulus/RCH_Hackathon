@@ -2,7 +2,6 @@ package ch.raiffeisen.banking.transactions.resource;
 
 import ch.raiffeisen.banking.transactions.data.TransactionsDao;
 import ch.raiffeisen.banking.transactions.json.Transaction;
-import com.sun.deploy.net.HttpResponse;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
