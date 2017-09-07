@@ -1345,7 +1345,7 @@
         },
         "text" : {
           "type" : "string",
-          "example" : "Wie wichtig sind für Sie planbare Kosten für Ihr Wohneigentum?"
+          "example" : "Wie wichtig sind fÃ¼r Sie planbare Kosten fÃ¼r Ihr Wohneigentum?"
         },
         "answers" : {
           "$ref" : "#/definitions/Answers"
