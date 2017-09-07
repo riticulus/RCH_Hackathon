@@ -2,4 +2,4 @@ This REST service provides you with anonymized personal financial transactions o
 
 Every record contains additional attributes with the type of transaction. These attributes were added by a (Personal Finance Management) tool that categorizes each and every transaction using artificial intelligence.
 
-Find more information about how to integrate this service into your project using [SwaggerUI](TODO).
+Find more information about how to integrate this service into your project using [SwaggerUI](http://transactions-api-transactions.193b.starter-ca-central-1.openshiftapps.com/swagger-ui.html).
