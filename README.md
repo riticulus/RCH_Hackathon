@@ -52,7 +52,7 @@ Do you have trouble connecting the devices? Problems using the APIs? Experts fro
 
 Is your energy level low? Meet us at the Raiffeisen RAI Lab show stand and relax with a free energy drink. 
 
-These partners await you at the Raiffeisen RAI Lab show stand:
+These partners are awaiting your visit at the Raiffeisen RAI Lab show stand:
 - **Stefan Jeker**, Leiter RAI Lab
 - **Stefan Broder**, Abteilungsleiter Elektronische Kanäle
 - **Stevan Dronjak**, Gruppenleiter Web Application Security
