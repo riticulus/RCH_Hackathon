@@ -1,7 +1,6 @@
 package ch.raiffeisen.banking.transactions.data;
 
 import ch.raiffeisen.banking.transactions.json.Transaction;
-import com.ibm.nws.ejs.ras.Tr;
 import com.opencsv.CSVReader;
 import lombok.Getter;
 import lombok.Setter;
