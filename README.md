@@ -33,7 +33,7 @@ Use your device of choice! We want you to innovate ideas the way _you_ would lik
 
 
 ### APIs
-If you want you can benefit from existing APIs from Amazon, Google, Microsoft and Raiffeisen, [read more](https://github.com/riticulus/RCH_Hackathon/tree/master/apis) about the APIs.
+If you want you can benefit from existing APIs from Amazon, Google, Microsoft and Raiffeisen, [read more](apis) about the APIs.
 
 
 
