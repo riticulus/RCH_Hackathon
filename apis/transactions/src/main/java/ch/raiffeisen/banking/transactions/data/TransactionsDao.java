@@ -28,8 +28,8 @@ public class TransactionsDao {
     public void read() throws IOException {
         data = new ArrayList<>();
 
-        File file = new ClassPathResource("transactions.csv").getFile();
-        try (Reader fileReader = new InputStreamReader(new FileInputStream(file), "Windows-1252")) {
+        try (InputStream inputStream = new ClassPathResource("transactions.csv").getInputStream();
+             Reader fileReader = new InputStreamReader(inputStream, "Windows-1252")) {
             try (CSVReader csvReader = new CSVReader(fileReader, ';')) {
                 List<String[]> records = csvReader.readAll();
                 for (int row=1; row<records.size(); row++) { // erste Zeile überspringen (Titel-Zeile)
