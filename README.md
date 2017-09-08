@@ -37,12 +37,13 @@ If you want you can benefit from existing APIs from Amazon, Google, Microsoft an
 
 
 ### Support
+
+<img align="right" src="http://alterdrinks.co.uk/image/cache/data/club_mate_33-180x180.png">
 Are you unsure if your ideas meet our expections? Don't hesitate to visit us at our Raiffeisen booth and talk to our representatives.
 
 Do you have trouble connecting the devices? Problems using the APIs? Experts from Microsoft and Raiffeisen will help you with technical questions.
 
-Is your energy level low? Meet us at the Raiffeisen booth and relax with a free energy drink. 
-<img align="right" src="http://alterdrinks.co.uk/image/cache/data/club_mate_33-180x180.png">
+Is your energy level low? Meet us at the Raiffeisen booth and relax with a free energy drink.
 
 These partners are awaiting your visit at the Raiffeisen booth:
 - **Stefan Jeker**, Leader RAI Lab
