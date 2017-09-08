@@ -37,14 +37,14 @@ If you want you can benefit from existing APIs from Amazon, Google, Microsoft an
 
 
 ### Support
-Are you unsure if your ideas meet our expections? Don't hesitate to visit us at our Raiffeisen RAI Lab show stand and talk to our representatives.
+Are you unsure if your ideas meet our expections? Don't hesitate to visit us at our Raiffeisen booth and talk to our representatives.
 
 Do you have trouble connecting the devices? Problems using the APIs? Experts from Microsoft and Raiffeisen will help you with technical questions.
 
-Is your energy level low? Meet us at the Raiffeisen RAI Lab show stand and relax with a free energy drink. 
+Is your energy level low? Meet us at the Raiffeisen booth and relax with a free energy drink. 
 ![Club Mate](http://alterdrinks.co.uk/image/cache/data/club_mate_33-180x180.png)
 
-These partners are awaiting your visit at the Raiffeisen RAI Lab show stand:
+These partners are awaiting your visit at the Raiffeisen booth:
 - **Stefan Jeker**, Leader RAI Lab
 - **Stefan Broder**, Unit Leader Elektronische Kanäle
 - **Stevan Dronjak**, Team Leader Web Application Security
@@ -52,5 +52,4 @@ These partners are awaiting your visit at the Raiffeisen RAI Lab show stand:
 - **Jonas Rüttimann**, Software Engineer
 - **Heinz Ledermann**, Software Engineer
 - **Thomas Scheifele**, Software Engineer
-- **Mikhail Chatillon**, Technical Evangelist, Microsoft Schweiz GmbH
-- ...
+- **Mikhail Chatillon**, Technical Evangelist, Microsoft Schweiz GmbH (to find at the Microsoft booth)
