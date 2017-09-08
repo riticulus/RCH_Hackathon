@@ -4,11 +4,11 @@
 ![RAI Lab](https://www.raiffeisen.ch/content/dam/www/rch/ueber-uns/organisation/bannerbilder/Logo-RAI-Lab.jpg.transform/w1920/image.jpg)
 
 ## The Challenge: Hack a Mind-Blowing Vision of «Voice Banking»
-The Raiffeisen Group is the third-largest banking group in Switzerland and leader in retail banking. After 20 years of Online Banking and after 10 years of Mobile Banking we belive it’s time for a new age of Banking. If we look at upcoming trends, we believe that «Voice Banking» might be the future!
+The Raiffeisen Group is the third-largest banking group in Switzerland and leader in retail banking. After 20 years of Online Banking and after 10 years of Mobile Banking we belive it’s time for a new age of Banking. Looking at upcoming trends we believe that «Voice Banking» might be the future!
 
 By today at least [11% of US housholds talk to a digital voice assistant](http://www.telecompetitor.com/report-voice-assistant-penetration-jumps-to-12-of-u-s-broadband-households/) (launch in 06/2015). And [20% of Google's mobile queries are voice searches](http://searchengineland.com/google-reveals-20-percent-queries-voice-queries-249917). Think about that! What will we be facing ten years from now?
 
-If people are using voice as their favorite interface to talk to their bank, they probably need different services than today. They will be talking to a mobile device or maybe to their intelligent speaker in their living room. So there might not even be a screen available to present the results to their voice query. So start thinking outside the box!
+If people are using voice as their favorite interface to talk to their bank, they probably need different services than today. They will be talking to a mobile device or maybe to their intelligent speaker in their living room. So there might not even be a screen available to present the results to their voice query. Or - speaking of living rooms - there's probably a huge TV screen to integrate. So start thinking outside the box!
 
 Who will be using voice commands? Where? When? What Services could they be using? Do we already have the technology to fulfill the demands of our future bank customers? Or do we have to reinvent the wheel?
 
