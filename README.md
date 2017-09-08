@@ -16,12 +16,6 @@ Give us a sneek peek into your offbeat imagination! We are keen to see a prototy
 
 
 
-## The Reward
-The Raiffeisen RAI Lab jury will elect the best prototype of «Voice Banking». The winning team will be rewarded with gold coins worth X thousand Swiss Francs.
-
-![Goldvreneli](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/20_Schweizer_Franken_Goldvrenzeli_Wertseite.png/140px-20_Schweizer_Franken_Goldvrenzeli_Wertseite.png)
-
-
 
 
 ## Infrastructure
@@ -32,7 +26,7 @@ Otherwise take benefit of the infrastructure we offer you:
 ### Devices
 Use your device of choice! We want you to innovate ideas the way _you_ would like to use your voice to interact with banking services. Choose the device that meets best the requirements of your ideas. Nevertheless, we will provide you with an [Amazon Echo](https://developer.amazon.com/alexa) or a [Google Home](http://home.google.com/)  device if you're deciding to integrate it into your project.
 
-![Amnazon Echo](https://images-na.ssl-images-amazon.com/images/I/41iz5Tw82IL._AC_SR150,150_.jpg) <img src="https://storage.googleapis.com/madebygoog/v1/home/bases/base-gray.png" width="30%" height="30%">
+![Amnazon Echo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Echo.jpg/110px-Amazon_Echo.jpg) <img src="https://storage.googleapis.com/madebygoog/v1/home/bases/base-gray.png" width="40%" height="40%">
 
 
 
